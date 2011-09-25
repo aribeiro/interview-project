@@ -42,7 +42,7 @@ Treat this project as a real production project complete with :
 
 The faster you can do it without sacrificing anything in code quality is a bonus!
 
-The maxium amount of time is 2x our fastest developers time doing this project or 10 hours. Good luck!
+The maxium amount of time is 1 hour longer than our fastest developers time doing this project or 6 hours. Good luck!
 
 ## Editor settings
 
