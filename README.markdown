@@ -41,6 +41,8 @@ Treat this project as a real production project complete with :
 
 The faster you can do it without sacrificing anything in code quality is a bonus!
 
+The maxium amount of time is 2x our fastest developers time doing this project or 10 hours. Good luck!
+
 ## Editor settings
 
 We use 2 spaces (as spaces) for our tabs.
