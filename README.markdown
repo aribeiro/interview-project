@@ -31,6 +31,7 @@ There are a number of issues that occur with product importers including:
 ## Quality
  
 Treat this project as a real production project complete with :
+
  * tests you normally write
  * appropriate git comments and commits
  * documentation when code is rather tricky (don't over document though)
