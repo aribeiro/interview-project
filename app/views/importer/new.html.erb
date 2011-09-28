@@ -1,0 +1,12 @@
+<h1>Import your Products Here</h1>
+
+<%= form_tag importer_path do %>
+  <p>
+    <%= label_tag "add your products list" %>
+    <br />
+    <%= file_field_tag "products_list" %>
+  </p>
+  <p>
+    <%= submit_tag "upload" %>
+<% end %>
+
