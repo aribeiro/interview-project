@@ -4,7 +4,7 @@ class CreateItems < ActiveRecord::Migration
       t.string :name
       t.decimal :price
       t.string :sku
-      t.string :description
+      t.text :description
       t.string :provider
       t.string :gender
       t.string :category
