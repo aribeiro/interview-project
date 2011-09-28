@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th></th>
     <th>Name</th>
     <th>Price</th>
     <th>Sku</th>
@@ -16,10 +17,11 @@
 
 <% @items.each do |item| %>
   <tr>
+    <td><%= item.id %></td>
     <td><%= item.name %></td>
     <td><%= item.price %></td>
     <td><%= item.sku %></td>
-    <td><%= item.description %></td>
+    <td><%= truncate item.description, :lenght => 50 %></td>
     <td><%= item.provider %></td>
     <td><%= item.gender %></td>
     <td><%= item.category %></td>
