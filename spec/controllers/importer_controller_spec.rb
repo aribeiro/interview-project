@@ -11,18 +11,18 @@ describe ImporterController do
 
   describe "POST 'create'" do
     it " should be successfuly" do
-      Item.stub(:create_multiples_from_cvs).with("file"){ true }
+      Item.stub(:create_multiples_from_csv).with("file"){ true }
       post :create, :importer => {"products_list" => "file"}
       
-      response.should redirect_to(importer_url)
+      response.should redirect_to(new_importer_url)
       flash[:notice].should == "Items successfuly imported"
     end
 
     it "should not be succecifuly" do
-      Item.stub(:create_multiples_from_cvs).with("file"){ false }
+      Item.stub(:create_multiples_from_csv).with("file"){ false }
       post :create, :importer => {"products_list" => "file"}
       
-      response.should redirect_to(importer_url)
+      response.should redirect_to(new_importer_url)
       flash[:notice].should == "There is some problem on the import, please try again"
     end
   end
