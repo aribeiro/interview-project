@@ -19,7 +19,7 @@ class Item < ActiveRecord::Base
         next if i == 0
 
         attributes = {
-          :name        => self.sanatize_utf8(item[0]),
+          :name        => self.sanitize_text(item[0]),
           #:image_file => item[1] # we could you paperclip here
           :provider    => self.sanitize_text(item[2]),
           :price       => self.sanitize_decimal(item[3]),
